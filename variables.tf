@@ -6,4 +6,5 @@ variable "instance_type" {
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "3.19.0"
+  cidr_block = "10.100.0.0/16"
 }
