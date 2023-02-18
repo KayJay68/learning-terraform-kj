@@ -22,3 +22,15 @@ resource "aws_instance" "web" {
     Name = "HelloWorld"
   }
 }
+
+module "vpc" {
+  source = "../../"
+
+  create_vpc = false
+
+  manage_default_vpc               = true
+  default_vpc_name                 = "defaultVPC Didasko"
+  default_vpc_enable_dns_hostnames = true
+
+  tags = local.tags
+}
