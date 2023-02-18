@@ -23,7 +23,8 @@ resource "aws_instance" "web" {
   }
 }
 
-resource "aws_vpc" "didasko-playground-vpc" {
+resource "aws_subnet" "didasko-playground-vpc" {
+  vpc_id = "vpc-07cb9085c6ea80009"
   cidr_block = "10.100.0.0/16"
 
 }
