@@ -22,3 +22,8 @@ resource "aws_instance" "web" {
     Name = "HelloWorld"
   }
 }
+
+resource "aws_vpc" "didasko-playground-vpc" {
+  cidr_block = "10.100.0.0/16"
+
+}
