@@ -19,6 +19,6 @@ resource "aws_instance" "blog" {
   instance_type = "t3.nano"
 
   tags = {
-    Name = "HelloWorld"
+    Name = "Blog Project"
   }
 }
